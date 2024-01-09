@@ -13,3 +13,6 @@ INSERT_USERNAME=$($PSQL "insert into users(username) values('$USERNAME')")
 else
 echo -e "\nWelcome back, $USERNAME! You have played __games_played games, and your best game took __best_guesses__ guesses."
 fi
+
+# generate secret (random) number
+SECRET_NUMBER=$(echo $((1 + RANDOM % 1000)))
