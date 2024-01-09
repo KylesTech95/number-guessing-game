@@ -21,3 +21,5 @@ SECRET_NUMBER=$(echo $((1 + RANDOM % 1000)))
 # guess the number
 echo -e "Guess the secret number between 1 and 1000:"
 
+# add counter variable
+COUNTER=1
