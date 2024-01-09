@@ -16,3 +16,6 @@ fi
 
 # generate secret (random) number
 SECRET_NUMBER=$(echo $((1 + RANDOM % 1000)))
+# test
+# echo $SECRET_NUMBER
+# guess the number
