@@ -35,3 +35,4 @@ echo -e "Guess the secret number between 1 and 1000:"
 COUNTER=1
 
 #start guessing numbers
+GUESS
