@@ -1,5 +1,15 @@
 #!/bin/bash
 PSQL="psql --username=freecodecamp --dbname=number_guess -t --no-align -c"
+# guess the number
+GUESS(){
+  if [[ $1 ]]
+  then
+  COUNTER=$(echo $(($COUNTER + 1)))
+  fi
+  echo $COUNTER
+  read USER_GUESS
+}
+
 echo  -e "\nEnter your username:"
 sleep .5
 read USERNAME
@@ -23,3 +33,5 @@ echo -e "Guess the secret number between 1 and 1000:"
 
 # add counter variable
 COUNTER=1
+
+#start guessing numbers
